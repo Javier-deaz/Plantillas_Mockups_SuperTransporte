@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <title>
+            Plantilla general
+        </title>
+        <!-- Link estilos generales -->
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+        <!-- Link de estilos de Bootstrap -->
+        <link href="css/dist/css/bootstrap.min.css" rel="stylesheet"/>
+        <!-- Link Font Awsome Icons -->
+        <link href="css/fontawesome-free-6.0.0-web/css/all.css" rel="stylesheet"/>
+        <!-- Link Js -->
+        <!-- Link Js -->
+        <script src="js/funciones.js">
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <h3 class="headline-l azul-txt-004884">
+                    Formulario general
+                </h3>
+                <div class="col-12">
+                    <form style="margin: 25px;">
+                        <div class="form-group body-1">
+                            <label class="gris-txt-4B4B4B" for="exampleInputEmail1">
+                                Usuario
+                            </label>
+                            <input aria-describedby="emailHelp" class="campo-form campo-texto" id="exampleInputEmail1" placeholder="Ingresar email" type="email"/>
+                        </div>
+                        <br/>
+                        <div class="form-group body-1" id="pass-group">
+                            <label class="gris-txt-4B4B4B" for="exampleInputPassword1">
+                                Contraseña
+                            </label>
+                            <input class="campo-form campo-texto password1" id="input-pass" name="password" placeholder="Ingresar Contraseña" type="password"/>
+                            <span class="fa fa-fw fa-eye fa-lg azul-txt-3366CC password-icon show-password" onclick="verPass();">
+                            </span>
+                        </div>
+                        <br/>
+                        <label class="gris-txt-4B4B4B" for="exampleInputPassword1">
+                            Área de texto
+                        </label>
+                        <div class="form-group">
+                            <textarea class="campo-form campo-textarea" rows="3">
+                            </textarea>
+                        </div>
+                        <br/>
+                        <!-- Desplegables ó Selects -->
+                        <div class="form-group">
+                            <label>
+                                Ciudad
+                            </label>
+                            <select class="campo-form lista-select">
+                                <option>
+                                    -- Seleccionar --
+                                </option>
+                                <option>
+                                    Santa Marta
+                                </option>
+                                <option>
+                                    Barranquilla
+                                </option>
+                            </select>
+                        </div>
+                        <br/>
+                        <div class="small">
+                            Zona de ReCapchat según Mockups
+                        </div>
+                        <br/>
+                        <button class="boton-activo-bg mb-3" type="submit">
+                            INGRESAR
+                        </button>
+                        <br/>
+                        <a class="boton-enlace-activo" data-original-title="Recuperar contrasena" href="#" target="_blank">
+                            RECUPERAR CONTRASEÑA
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid p-0">
+            <h3 class="headline-l azul-txt-004884 m-4">
+                Alertas / Notificaciones
+            </h3>
+            <!-- Zona de Alerta "Caso de éxito"-->
+            <div class="alerta alerta-caso-exito">
+                <i class="fa-solid fa-circle-check fa-lg">
+                </i>
+                <span>
+                    URL Funciona correctamente.
+                </span>
+            </div>
+            <br/>
+            <!-- Zona de Alerta "Aviso de proceso"-->
+            <div class="alerta alerta-aviso-proceso">
+                <i class="fa-solid fa-circle-check fa-lg">
+                </i>
+                <span>
+                    Realizando validación de URL.
+                </span>
+            </div>
+            <br/>
+            <!-- Zona de Alerta "Caso error"-->
+            <div class="alerta alerta-caso-error">
+                <i class="fa-solid fa-circle-xmark fa-lg">
+                </i>
+                <span>
+                    La URL presenta errores de funcionamiento.
+                </span>
+            </div>
+            <br/>
+        </div>
+    </body>
+</html>

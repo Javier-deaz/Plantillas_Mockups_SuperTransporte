@@ -1,0 +1,694 @@
+@charset "utf-8";
+/* CSS Document Plantilla*/
+
+/*------------------------------ PALETA DE COLORES Y TAMAÑO ------------------------------*/
+
+:root {
+    /* Colores: */
+    /*Para fondos y textos*/
+    --color-blanco-FFFFFF: #FFFFFF;
+    --color-negro-000000: #000000;
+    /*Para fondos, titulos, subtitulos, boton activo, input en uso y alerta "Aviso de proceso"*/
+    --color-azul-3366CC: #3366CC;
+    /*Para titulos, fondos y boton hover*/
+    --color-azul-004884: #004884;
+    /*Para estado valido formularios*/
+    --color-verde-069169: #069169;
+    /*Para alerta "Caso de éxito"*/
+    --color-verde-008E65: #008E65;
+    /*Para estado incorrecto formularios y listas*/
+    --color-rojo-A80521: #A80521;
+    /*Para alerta "Caso error"*/
+    --color-rojo-D11F3E: #D11F3E;
+    /*Para textos corridos y caption*/
+    --color-gris-4B4B4B: #4B4B4B;
+    /*Color de fondo Login, sombras input, DIV y hover de lista*/
+    --color-azul-E6EFFD: #E6EFFD;
+    /*Estado boton activo*/
+    --color-azul-boton-activado: #3366CC;
+    /*Estado boton desactivado, texto migas de pan, trazo input, input desactivado (texto, trazo y boton)*/
+    --color-gris-BABABA: #BABABA;
+    /*Input inhabilitado relleno*/
+    --color-gris-F2F2F2: #F2F2F2;
+    /*Tamaño de fuente*/
+    --font-size-14: 14px;
+    --font-size-15: 15px;
+    --font-size-16: 16px;
+    --font-size-18: 18px;
+    --font-size-20: 20px;
+    --font-size-24: 24px;
+    --font-size-32: 32px;
+    --font-size-40: 40px;
+    --fharacter-spacing-0: 0px;
+    --fecoration-underline: underline;
+    /*Botones*/
+    --border-radio: 16px;
+    --padding-boton: 8px 25px 8px 25px;
+}
+/*------------------------------ RESETEAR ESTILOS ------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+.cero-space {
+    margin: 0px;
+    padding: 0px;
+}
+/*------------------------------ JERARQUIA TIPOGRÁFICA ------------------------------*/
+
+/*Rutas de las fuentes*/
+
+@font-face {
+    font-family: "Montserrat Semi-bold";
+    src: url("../fonts/Montserrat/static/Montserrat-SemiBold.ttf");
+}
+@font-face {
+    font-family: "Montserrat Bold";
+    src: url("../fonts/Montserrat/static/Montserrat-Bold.ttf");
+}
+@font-face {
+    font-family: "Montserrat Medium";
+    src: url("../fonts/Montserrat/static/Montserrat-Medium.ttf");
+}
+@font-face {
+    font-family: "Work Sans Bold";
+    src: url("../fonts/Work_Sans/static/WorkSans-Bold.ttf");
+}
+@font-face {
+    font-family: "Work Sans Medium";
+    src: url("../fonts/Work_Sans/static/WorkSans-Medium.ttf");
+}
+@font-face {
+    font-family: "Work Sans Regular";
+    src: url("../fonts/Work_Sans/static/WorkSans-Regular.ttf");
+}
+/*Clases de títulos, subtitulos, parrafos, encabezados y entre otros*/
+
+/*Para etiquetas h1*/
+
+.headline-xxl {
+    font-family: "Montserrat Semi-bold";
+    font-size: var(--font-size-40);
+}
+/*Para etiquetas h2*/
+
+.headline-xl {
+    font-family: "Montserrat Semi-bold";
+    font-size: var(--font-size-32);
+}
+/*Para etiquetas h3*/
+
+.headline-l {
+    font-family: "Montserrat Semi-bold";
+    font-size: var(--font-size-24);
+}
+/*Para etiquetas h4*/
+
+.headline-m {
+    font-family: "Montserrat Semi-bold";
+    font-size: var(--font-size-20);
+}
+/*Para etiquetas h5*/
+
+.headline-xs {
+    font-family: "Montserrat Bold";
+    font-size: var(--font-size-16);
+}
+.sub-title {
+    font-family: "Work Sans Bold";
+    font-size: var(--font-size-16);
+}
+.sub-title-s {
+    font-family: "Work Sans Bold";
+    font-size: var(--font-size-14);
+}
+.table-head {
+    font-family: "Work Sans Medium";
+    font-size: var(--font-size-16);
+}
+.table-head-s {
+    font-family: "Montserrat Semi-bold";
+    font-size: var(--font-size-16);
+}
+.subtitle {
+    font-family: "Montserrat Semi-bold";
+    font-size: var(--font-size-18);
+}
+.p-description {
+    font-family: "Montserrat Medium";
+    font-size: var(--font-size-20);
+}
+.body-1 {
+    font-family: "Work Sans Regular";
+    font-size: var(--font-size-16);
+    word-wrap: break-word;
+}
+.body-2 {
+    font-family: "Work Sans Regular";
+    font-size: var(--font-size-14);
+}
+.body-3 {
+    font-family: "Work Sans Regular";
+    font-size: var(--font-size-15);
+}
+.button-text {
+    font-family: "Work Sans Medium";
+    font-size: var(--font-size-16);
+}
+.field-text {
+    font-family: "Work Sans Medium";
+    font-size: var(--font-size-16);
+}
+.caption {
+    font-family: "Work Sans Medium";
+    font-size: var(--font-size-14);
+}
+/*------------------------------ COLORES ------------------------------*/
+
+/*Colores´para fondos*/
+
+.azul-bg-E6EFFD {
+    background-color: var(--color-azul-E6EFFD);
+}
+.azul-bg-3366CC {
+    background-color: var(--color-azul-3366CC);
+}
+.azul-bg-004884 {
+    background-color: var(--color-azul-004884);
+}
+.verde-bg-008E65 {
+    background-color: var(--color-verde-008E65);
+}
+.verde-bg-069169 {
+    background-color: var(--color-verde-069169);
+}
+.rojo-bg-A80521 {
+    background-color: var(--color-rojo-A80521);
+}
+.rojo-bg-D11F3E {
+    background-color: var(--color-rojo-D11F3E);
+}
+.blanco-bg-FFFFFF {
+    background-color: var(--color-blanco-FFFFFF);
+}
+.negro-bg-000000 {
+    background-color: var(--color-negro-000000);
+}
+.gris-bg-4B4B4B {
+    background-color: var(--color-gris-4B4B4B);
+}
+.gris-bg-BABABA {
+    background-color: var(--color-gris-BABABA);
+}
+.gris-bg-F2F2F2 {
+    background-color: var(--color-gris-F2F2F2);
+}
+/*Colores para textos*/
+
+.azul-txt-E6EFFD {
+    color: var(--color-azul-E6EFFD);
+}
+.azul-txt-3366CC {
+    color: var(--color-azul-3366CC);
+}
+.azul-txt-004884 {
+    color: var(--color-azul-004884);
+}
+.verde-txt-008E65 {
+    color: var(--color-verde-008E65);
+}
+.verde-txt-069169 {
+    color: var(--color-verde-069169);
+}
+.rojo-txt-A80521 {
+    color: var(--color-rojo-A80521);
+}
+.rojo-txt-D11F3E {
+    color: var(--color-rojo-D11F3E);
+}
+.blanco-txt-FFFFFF {
+    color: var(--color-blanco-FFFFFF);
+}
+.negro-txt-000000 {
+    color: var(--color-negro-000000);
+}
+.gris-txt-4B4B4B {
+    color: var(--color-gris-4B4B4B);
+}
+.gris-txt-BABABA {
+    color: var(--color-gris-BABABA);
+}
+.gris-txt-F2F2F2 {
+    color: var(--color-gris-F2F2F2);
+}
+/*------------------------------ ESTILOS HEADER GOV.CO ------------------------------*/
+
+.cabecera {
+    background-color: var(--color-azul-3366CC);
+    padding-left: 85px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+/*------------------------------ ESTILOS CAMPOS DE TEXTO ------------------------------*/
+
+/*Estilos de campos de formulario activo, en uso y desactivado*/
+
+/*Clase general para todos los elementos de un formulario*/
+
+.campo-form {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-clip: padding-box;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.campo-form::placeholder {
+    color: #BABABA;
+    opacity: 1;
+}
+/*Sombra cuando el campo está activo, funciona para input y TextArea*/
+
+.campo-form:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0px 4px 0px 0.2px #E6EFFD;
+}
+/*Propiedades de Input text*/
+
+.campo-texto {
+    color: #4B4B4B;
+    border: 1px solid #BABABA;
+    background-color: #FFF;
+}
+.campo-desactivado {
+    color: #BABABA;
+    border: 1px solid #BABABA;
+    background-color: #F2F2F2;
+}
+/*Estilos para validaciones de campos*/
+
+.campo-valido {
+    color: #069169;
+    border: 1px solid #069169;
+    background-color: #FFF;
+}
+.campo-invalido {
+    color: #A80521;
+    border: 1px solid #A80521;
+    background-color: #FFF;
+}
+.message-valido {
+    display: block;
+    width: 100%;
+    margin-top: 0.35rem;
+    font-size: 80%;
+    color: #069169;
+}
+.message-invalido {
+    display: block;
+    width: 100%;
+    margin-top: 0.35rem;
+    font-size: 80%;
+    color: #A80521;
+}
+/*Estilo para campos de TextArea Activo*/
+
+.campo-textarea {
+    color: #4B4B4B;
+    border: 1px solid #BABABA;
+    background-color: #FFF;
+}
+/*------------------------------ ESTILOS DESPLEGABLES ------------------------------*/
+
+select {
+    color: #4B4B4B;
+    border: 1px solid #BABABA;
+    background-color: #FFF;
+    background-image: url('../iconos/flecha_abajo.png');
+    background-repeat: no-repeat, repeat;
+    /* Posicionar icono*/
+    background-position: right .7em top 50%, 0 0;
+    /* tamaño del icono */
+    background-size: .65em auto, 100%;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+select::-ms-expan {
+    display: none;
+}
+option {
+    background: #fff !important;
+    color: #4b4b4b !important;
+}
+.password-icon {
+    float: right;
+    position: relative;
+    margin: -20px 10px 0 0;
+    cursor: pointer;
+}
+/*------------------------------ ESTILOS DE BOTONES ------------------------------*/
+
+/*Botones en estado Activo*/
+
+/*1. Estilos de boton Activado con etiqueta de fondo*/
+
+.boton-activo-bg {
+    font-family: "Work Sans Medium";
+    font-size: var(--font-size-16);
+    color: var(--color-blanco-FFFFFF);
+    background-color: var(--color-azul-3366CC);
+    padding: var(--padding-boton);
+    border-radius: var(--border-radio);
+}
+.boton-activo-bg:hover {
+    color: var(--color-blanco-FFFFFF);
+    background-color: var(--color-azul-004884);
+}
+/*2. Estilos de boton Activado sin etiqueta de fondo*/
+
+.boton-activo {
+    font-family: "Work Sans Medium";
+    font-size: var(--font-size-16);
+    color: var(--color-azul-3366CC);
+    border: 1px solid var(--color-azul-3366CC);
+    padding: var(--padding-boton);
+    border-radius: var(--border-radio);
+}
+.boton-activo:hover {
+    color: var(--color-blanco-FFFFFF);
+    background-color: var(--color-azul-004884);
+}
+/*3. Estilos de boton Activado tipo enlace*/
+
+.boton-enlace-activo {
+    font-family: "Work Sans Medium";
+    font-size: var(--font-size-16);
+    color: var(--color-azul-3366CC);
+}
+.boton-enlace-activo:hover {
+    color: var(--color-azul-004884);
+}
+/*Botones en estado Desactivado*/
+
+/*1. Estilos de boton Desactivado con etiqueta de fondo*/
+
+.boton-desactivado-bg {
+    font-family: "Work Sans Medium";
+    font-size: var(--font-size-16);
+    color: var(--color-blanco-FFFFFF);
+    background-color: var(--color-gris-BABABA);
+    padding: var(--padding-boton);
+    border-radius: var(--border-radio);
+}
+/*2. Estilos de boton Desactivado sin etiqueta de fondo*/
+
+.boton-desactivado {
+    font-family: "Work Sans Medium";
+    font-size: var(--font-size-16);
+    color: var(--color-gris-BABABA);
+    background-color: var(--color-blanco-FFFFFF);
+    border: 1px solid var(--color-gris-BABABA);
+    padding: var(--padding-boton);
+    border-radius: var(--border-radio);
+}
+/*3. Estilos de boton Desactivado tipo enlace*/
+
+.boton-enlace-desactivado {
+    font-family: "Work Sans Medium";
+    font-size: var(--font-size-16);
+    color: var(--color-gris-BABABA);
+}
+/*4. Botones tipo menu*/
+
+.boton-menu {
+    font-family: "Work Sans Bold";
+    font-size: var(--font-size-14);
+    color: #3366CC;
+    background-color: #f2f2f2;
+    padding: var(--padding-boton);
+}
+/*.boton-menu:hover {
+    background-color: #b2b2b2;
+}*/
+
+/*Estilos de radio curvo*/
+
+.radio-completo {
+    border-radius: var(--border-radio);
+}
+.semi-radio-arriba {
+    border-radius: 16px 16px 0px 0px;
+}
+.semi-radio-abajo {
+    border-radius: 0px 0px 16px 16px;
+}
+/*Estilos de boton verPassword*/
+
+.ver-boton-pass {
+    background-repeat: no-repeat, repeat;
+    position: absolute;
+    margin-left: 220px;
+    margin-top: 30px;
+}
+.sin-decoration {
+    text-decoration: none;
+}
+/*------------------------------ ESTILOS MIGAJAS DE PAN ------------------------------*/
+
+.migajas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin-bottom: 1rem;
+    list-style: none;
+    border-radius: 0.25rem;
+    font-family: "Work Sans Regular";
+    font-size: var(--font-size-14);
+    color: #3366cc;
+}
+.migajas-item a {
+    text-decoration: none;
+    color: #3366cc;
+}
+.migajas-item a:hover {
+    text-decoration: underline;
+}
+.migajas-item+.migajas-item::before {
+    display: inline-block;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    color: #BABABA;
+    content: ">";
+}
+.migajas-item.active {
+    font-family: "Work Sans Medium";
+    font-size: var(--font-size-14);
+    color: #3366cc;
+}
+/*------------------------------ ESTILOS ALERTAS / NOTIFICACIONES ------------------------------*/
+
+/*Estilos generales de una alerta*/
+
+.alerta {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+    padding: 0.71rem !important;
+    margin: 0 !important;
+    border-radius: 3px !important;
+}
+.alerta i {
+    padding-top: 12px !important;
+    color: #fff
+}
+.alerta span {
+    font-family: "Montserrat Semi-bold";
+    font-size: var(--font-size-18);
+    margin-left: 14px !important;
+    color: #fff
+}
+/*Estilos Alerta "Caso de éxito"*/
+
+.alerta-caso-exito {
+    background-color: #008E65;
+}
+/*Estilos Alerta "Aviso de proceso"*/
+
+.alerta-aviso-proceso {
+    background-color: #3366CC;
+}
+/*Estilos Alerta "Caso error"*/
+
+.alerta-caso-error {
+    background-color: #D11F3E;
+}
+/*------------------------------ ESTILOS PIE DE PÁGINA ------------------------------*/
+
+#footer2 {
+    background-color: var(--color-verde-008E65);
+    padding-bottom: 1px;
+    margin: 0px;
+}
+#footer2 #f2 {
+    background-color: var(--color-blanco-FFFFFF);
+    margin: 0px 77px 54px 77px;
+    padding: 0px 59px 19px 59px;
+    border-right: 2px solid #E6EFFD;
+    border-bottom: 2px solid #E6EFFD;
+    border-left: 2px solid #E6EFFD;
+    border-radius: 0px 0px 18px 18px;
+}
+#footer3 #f3 {
+    padding: 50px 59px 19px 59px;
+}
+#footerv3 #f3 {
+    padding: 50px 59px 19px 59px;
+}
+#footer3 {
+    background-color: var(--color-azul-E6EFFD);
+    padding: 0px 77px 0px 77px;
+}
+#footerv3 {
+    background-color: var(--color-azul-FFFFFF);
+    padding: 0px 77px 0px 77px;
+}
+#logofooter {
+    background-color: var(--color-azul-3366CC);
+    padding-bottom: 17px;
+}
+#footer3 #logof3 {
+    float: right;
+    padding: 50px 77px 0px 77px;
+}
+#footerv3 #logof3 {
+    float: right;
+    padding: 50px 77px 0px 77px;
+}
+#logofooter a img {
+    margin: 24px 0px 22px 83px;
+}
+#logofooter a img {
+    margin-right: -75px;
+    margin-bottom: 0px;
+}
+.borde-footerv3 {
+    border-top: 2px solid #E6EFFD;
+    border-right: 2px solid #E6EFFD;
+    border-left: 2px solid #E6EFFD;
+}
+.borde-footer2 {
+    border-bottom: 2px solid #E6EFFD;
+    border-right: 2px solid #E6EFFD;
+    border-left: 2px solid #E6EFFD;
+}
+/*Estilos Iconos de Red Social*/
+
+.icon_red_social img {
+    width: 22px;
+    height: 22px;
+    margin-right: 5px;
+}
+/*Estilos políticas y Mapas*/
+
+.politica_mapa {
+    margin-top: 50px!important;
+    margin-bottom: 10px;
+    color: var(--color-azul-3366CC);
+}
+.politica_mapa_st {
+    color: var(--color-azul-3366CC);
+}
+/*------------------------------ ESTILOS PARA PANTALLAS 480PX ------------------------------*/
+
+/*Ajustes de pantalla de logo de Login*/
+
+@media screen and (max-width: 480px) {
+    #logo_login img {
+        zoom: 0.8;
+    }
+}
+@media screen and (max-width: 400px) {
+    #logo_login img {
+        zoom: 0.6;
+    }
+}
+@media screen and (max-width: 320px) {
+    #logo_login img {
+        zoom: 0.5;
+    }
+}
+/*Ajuste de pantalla de logo de página Crear Usuarios*/
+
+@media screen and (max-width: 300px) {
+    #logo_crear_usuario img {
+        zoom: 0.7;
+    }
+}
+/*Ajustes de Pie de Página*/
+
+@media screen and (max-width: 480px) {
+    #footer2 #f2 {
+        background-color: var(--color-blanco-FFFFFF);
+        margin: 0px 30px 54px 30px;
+        padding: 0px 30px 19px 30px;
+        border-radius: 0px 0px 18px 18px;
+        zoom: 0.7;
+    }
+}
+@media screen and (max-width: 480px) {
+    #footer3 #f3 {
+        margin-left: 20px;
+        padding-left: 10px;
+        zoom: 0.7;
+    }
+    #footer3 #contenedor {
+        margin-left: 21px;
+        margin-right: 21px;
+    }
+    #footer3 {
+        background-color: #E6EFFD;
+        padding: 0px;
+    }
+    #footer3 #logof3 {
+        float: right;
+        zoom: 0.6;
+    }
+}
+@media screen and (max-width: 480px) {
+    #footerv3 #f3 {
+        margin-left: 20px;
+        padding-left: 10px;
+        zoom: 0.7;
+    }
+    #footerv3 #contenedor {
+        margin-left: 21px;
+        margin-right: 20px;
+    }
+    #footerv3 {
+        background-color: #fff);
+        padding: 0px;
+    }
+    #footerv3 #logof3 {
+        float: right;
+        zoom: 0.6;
+    }
+}
