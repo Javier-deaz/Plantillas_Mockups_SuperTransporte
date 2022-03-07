@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <title>
+            Template sin Fondo
+        </title>
+        <!-- Link estilos generales -->
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+        <!-- Link de estilos de Bootstrap -->
+        <link href="css/dist/css/bootstrap.min.css" rel="stylesheet"/>
+        <!-- Link Font Awsome Icons -->
+        <link href="css/fontawesome-free-6.0.0-web/css/all.css" rel="stylesheet"/>
+        <!-- Link Js -->
+        <script src="js/funciones.js">
+        </script>
+    </head>
+    <body>
+        <!-- ZONA CABECERA GOV.CO-->
+        <header class="cabecera">
+            <a href="https://www.gov.co/home/" target="_blank" title="Acceder a la página">
+                <img alt="" height="30" src="https://www.supertransporte.gov.co/wp-content/uploads/2019/08/bloque2385.png" width="129"/>
+            </a>
+        </header>
+        <!-- FIN ZONA CABECERA GOV.CO -->
+        <!-- ZONA MENÚ -->
+        <nav class="navbar navbar-expand-lg navbar-light gris-bg-F2F2F2">
+            <a class="navbar-brand" href="#">
+                SuperTransporte
+            </a>
+            <button aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNavDropdown" data-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon">
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            Features
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            Pricing
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- FIN ZONA MENÚ -->
+        <!-- ZONA CONTENIDO -->
+        <div class="container">
+            <div class="col-12 col-md-7 m-0 p-0" id="inicio">
+                <h2 class="headline-xl azul-txt-004884 mt-5">
+                    KIT IU
+                </h2>
+                <p class="p-description azul-txt-004884 mt-5">
+                    Conjunto de componentes de diseño necesario para el acondicionamiento gráfico de la página web de la SuperTransporte, basado en los lineamientos de GOV.CO.
+                </p>
+                <p class="body-1 gris-txt-4B4B4B">
+                    <span class="sub-title gris-txt-4B4B4B">
+                        La estrategía de intregación GOV.CO consiste en lograr una misma cara y voz para todas las entidades del estado,
+                    </span>
+                    por ese motivo, la base de la integración cocnsiste en adoptar los lineamientos gráficos del KIT UI (Presente documento).
+                </p>
+                <p class="body-1 gris-txt-4B4B4B">
+                    Las entidades pueden integrar a Gov.co su: sede electrónica o página web, trámite o servciio, ventanilla única y portal de programa Transversal.
+                </p>
+                <p class="headline-xs azul-txt-004884 mt-5">
+                    Dentro de está plantilla encontraras todos los ejemplos diseñados para su aplicación.
+                </p>
+                <p class="body-2 color-gris-4B4B4B">
+                    Última actualización: 15 de mayo (Esta plantilla puede ir cambiando).
+                </p>
+            </div>
+        </div>
+        <div class="container-fluid gris-bg-F2F2F2 pt-5 mt-5 pb-3">
+            <div class="container">
+                <h3 class="headline-l azul-txt-004884">
+                    Formulario login
+                </h3>
+                <div class="row">
+                    <div class="col-12 m-0 p-0">
+                        <form style="margin: 25px;">
+                            <div class="form-group body-1">
+                                <label class="gris-txt-4B4B4B" for="exampleInputEmail1">
+                                    Usuario
+                                </label>
+                                <input aria-describedby="emailHelp" class="campo-form campo-texto" id="exampleInputEmail1" placeholder="Ingresar email" type="email"/>
+                            </div>
+                            <br/>
+                            <div class="form-group body-1" id="pass-group">
+                                <label class="gris-txt-4B4B4B" for="exampleInputPassword1">
+                                    Contraseña
+                                </label>
+                                <input class="campo-form campo-texto password1" id="input-pass" name="password" placeholder="Ingresar Contraseña" type="password"/>
+                                <span class="fa fa-fw fa-eye fa-lg azul-txt-3366CC password-icon show-password" onclick="verPass();">
+                                </span>
+                            </div>
+                            <br/>
+                            <div class="small">
+                                Zona de ReCapchat según Mockups
+                            </div>
+                            <br/>
+                            <button class="boton-activo-bg mb-3" type="submit">
+                                INGRESAR
+                            </button>
+                            <br/>
+                            <a class="boton-enlace-activo" data-original-title="Recuperar contrasena" href="#" target="_blank">
+                                RECUPERAR CONTRASEÑA
+                            </a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5 pb-5">
+            <h3 class="headline-l azul-txt-004884 mb-4">
+                Formulario Registro
+            </h3>
+            <div>
+                <form action="">
+                    <div class="form-row">
+                        <div class="form-group body-1 col-md-4">
+                            <label class="gris-txt-4B4B4B">
+                                Tipo de documento*
+                            </label>
+                            <select class="campo-form lista-select">
+                                <option>
+                                    Escoger
+                                </option>
+                                <option>
+                                    Opcion 1
+                                </option>
+                                <option>
+                                    Opcion 2
+                                </option>
+                            </select>
+                        </div>
+                        <div class="form-group body-1 ml-lg-4 col-md-4 ml-md-0">
+                            <label class="gris-txt-4B4B4B">
+                                Número de documento*
+                            </label>
+                            <input class="campo-form campo-texto" placeholder="Escribir documento" type="text"/>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group body-1 col-md-4">
+                            <label class="gris-txt-4B4B4B">
+                                Primer nombre*
+                            </label>
+                            <input class="campo-form campo-texto" placeholder="Escribir nombre" type="text"/>
+                        </div>
+                        <div class="form-group body-1 ml-lg-4 col-md-4 ml-md-0">
+                            <label class="gris-txt-4B4B4B">
+                                Segundo nombre
+                            </label>
+                            <input class="campo-form campo-texto" placeholder="Escribir nombre" type="text"/>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group body-1 col-md-4">
+                            <label class="gris-txt-4B4B4B">
+                                Primer apellido*
+                            </label>
+                            <input class="campo-form campo-texto" placeholder="Escribir apellido" type="text"/>
+                        </div>
+                        <div class="form-group body-1 ml-lg-4 col-md-4 ml-md-0">
+                            <label class="gris-txt-4B4B4B">
+                                Segundo apellido
+                            </label>
+                            <input class="campo-form campo-texto" placeholder="Escribir apellido" type="text"/>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group body-1 col-md-4">
+                            <label class="gris-txt-4B4B4B">
+                                Correo electrónico*
+                            </label>
+                            <input aria-describedby="emailHelp" class="campo-form campo-texto" placeholder="Escribir correo" type="email"/>
+                        </div>
+                        <div class="form-group body-1 ml-lg-4 col-md-4 ml-md-0">
+                            <label class="gris-txt-4B4B4B">
+                                Nombre de usuario
+                            </label>
+                            <input class="campo-form campo-texto" placeholder="Carga predeterminado" type="text"/>
+                        </div>
+                    </div>
+                    <div class="form-row mb-4">
+                        <div class="form-group body-1 col-md-4">
+                            <label class="gris-txt-4B4B4B">
+                                Dependencia
+                            </label>
+                            <select class="campo-form lista-select">
+                                <option>
+                                    Escoger
+                                </option>
+                                <option>
+                                    Opcion 1
+                                </option>
+                                <option>
+                                    Opcion 2
+                                </option>
+                            </select>
+                        </div>
+                        <div class="form-group body-1 ml-lg-4 col-md-4 ml-md-0">
+                            <label class="gris-txt-4B4B4B" for="exampleInputPassword1">
+                                Área de texto
+                            </label>
+                            <div class="form-group">
+                                <textarea class="campo-form campo-textarea" rows="3">
+                                </textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="boton-activo-bg" type="submit">
+                        GUARDAR
+                    </button>
+                </form>
+            </div>
+        </div>
+        <!-- FIN ZONA CONTENIDO -->
+        <!-- ZONA PIE DE PÁGINA COMPLETA -->
+        <div>
+            <!-- PIE 1 -->
+            <div id="footerv3">
+                <div class="semi-radio-arriba blanco-bg-FFFFFF borde-footerv3" id="contenedor">
+                    <div id="logof3">
+                        <img alt="" height="73" src="https://www.supertransporte.gov.co/wp-content/uploads/2021/03/Grupo-11376@2x.png" width="113"/>
+                    </div>
+                    <div class="cero-space" id="f3">
+                        <h4 class="headline-m azul-txt-004884 cero-space">
+                            Superintendencia de Transporte
+                        </h4>
+                        <br/>
+                        <h5 class="headline-xs azul-txt-004884 cero-space">
+                            Sede principal
+                        </h5>
+                        <h5 class="sub-title gris-txt-4B4B4B cero-space">
+                            Dirección
+                        </h5>
+                        <p class="body-1 gris-txt-4B4B4B cero-space">
+                            Diagonal 25 G # 95 A - 85 Bogotá D.C. - Colombia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- FIN PIE 1 -->
+            <!-- PIE 2 -->
+            <div id="footer2">
+                <div class="borde-footer2" id="f2">
+                    <p class="body-1 gris-txt-4B4B4B cero-space">
+                        Centro Integral de Atención al Ciudadano:
+                    </p>
+                    <p class="body-1 gris-txt-4B4B4B cero-space">
+                        Horario de atención de lunes a viernes de 7:00 a.m. - 4:00 p.m.
+                    </p>
+                    <br/>
+                    <h5 class="sub-title gris-txt-4B4B4B cero-space">
+                        Líneas de servicio telefónico
+                    </h5>
+                    <p class="body-1 gris-txt-4B4B4B cero-space">
+                        01 8000 915 615 Horario de atención de lunes a viernes de 8:00 a.m. - 5:00 p.m., sábados de 8:00 a.m. - 12:00 p.m.
+                        <br/>
+                        601 3526700 Sede Administrativa - Horario de atención de lunes a viernes de 8:00 a.m. - 5:00 p.m.
+                    </p>
+                    <h5 class="sub-title gris-txt-4B4B4B cero-space">
+                        ¿Cómo conduzco?
+                    </h5>
+                    <p class="body-1 gris-txt-4B4B4B cero-space">
+                        #767 Opción 3. Horario: 24/7
+                    </p>
+                    <h5 class="sub-title gris-txt-4B4B4B cero-space">
+                        Chat virtual:
+                    </h5>
+                    <p class="body-1 gris-txt-4B4B4B cero-space">
+                        lunes a viernes de 8:00 a.m. - 5:00 p.m.
+                    </p>
+                    <br/>
+                    <h5 class="sub-title gris-txt-4B4B4B cero-space">
+                        Correo Institucional:
+                    </h5>
+                    <p class="body-1 gris-txt-4B4B4B cero-space">
+                        ventanillaunicaderadicacion@supertransporte.gov.co
+                        <br/>
+                        atencionciudadano@supertransporte.gov.co
+                    </p>
+                    <br/>
+                    <h5 class="sub-title gris-txt-4B4B4B cero-space">
+                        Correo notificaciones jurídicas:
+                    </h5>
+                    <p class="body-1 gris-txt-4B4B4B cero-space">
+                        notificajuridica@supertransporte.gov.co
+                    </p>
+                    <!-- ENLACES DE REDES SOCIALES -->
+                    <div class="redes_sociales_st row mt-5">
+                        <div class="col-md-2 col-sm-12">
+                            <u>
+                                <a class="icon_red_social button-text" data-original-title="Twitter" href="https://twitter.com/supertransporte" target="_blank">
+                                    <img src="https://www.supertransporte.gov.co/wp-content/uploads/2021/03/Grupo-11371@2x.png"/>
+                                    Twitter
+                                </a>
+                            </u>
+                        </div>
+                        <div class="col-md-2 col-sm-12">
+                            <u>
+                                <a class="icon_red_social button-text" data-original-title="Facebook" href="https://es-la.facebook.com/Supertransporte/" target="_blank">
+                                    <img src="https://www.supertransporte.gov.co/wp-content/uploads/2021/03/Grupo-11373@2x.png"/>
+                                    Facebook
+                                </a>
+                            </u>
+                        </div>
+                        <div class="col-md-2 col-sm-12">
+                            <u>
+                                <a class="icon_red_social button-text" data-original-title="Instagram" href="https://www.instagram.com/supertransporte_oficial/" target="_blank">
+                                    <img src="https://www.supertransporte.gov.co/wp-content/uploads/2021/03/Grupo-11372@2x.png"/>
+                                    Instagram
+                                </a>
+                            </u>
+                        </div>
+                        <div class="col-md-2 col-sm-12">
+                            <u>
+                                <a class="icon_red_social button-text" data-original-title="YouTube" href="https://www.youtube.com/channel/UC0mcvyJ7WF-Dz884ZiIifHg" target="_blank">
+                                    <img src="https://www.supertransporte.gov.co/wp-content/uploads/2021/03/Grupo-11487@2x.png"/>
+                                    YouTube
+                                </a>
+                            </u>
+                        </div>
+                        <div class="col-md-2 col-sm-12 button-text">
+                            <u>
+                                <a class="icon_red_social" data-original-title="Likedin" href="https://www.linkedin.com/company/supertransporte" target="_blank">
+                                    <img src="https://www.supertransporte.gov.co/wp-content/uploads/2021/03/Grupo-11484@2x.png"/>
+                                    LinkedIn
+                                </a>
+                            </u>
+                        </div>
+                        <div class="col-md-2 col-sm-12">
+                            <u>
+                                <a class="icon_red_social button-text" data-original-title="Flickr" href="https://www.flickr.com/photos/193210255@N04/albums" target="_blank">
+                                    <img src="https://www.supertransporte.gov.co/wp-content/uploads/2021/12/icono-flick.png"/>
+                                    Flickr
+                                </a>
+                            </u>
+                        </div>
+                    </div>
+                    <div class="politica_mapa row">
+                        <div class="col-md-2 col-sm-12">
+                            <u>
+                                <a class="politica_mapa_st sub-title-s" data-original-title="Políticas" href="https://www.supertransporte.gov.co/index.php/politicas-st/" target="_blank">
+                                    Políticas
+                                </a>
+                            </u>
+                        </div>
+                        <div class="col-md-2 col-sm-12">
+                            <u>
+                                <a class="politica_mapa_st sub-title-s" data-original-title="Mapa de sitio" href="https://www.supertransporte.gov.co/index.php/mapa-de-sitio/" target="_blank">
+                                    Mapa de sitio
+                                </a>
+                            </u>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FIN PIE 2 -->
+            <!-- PIE 3 -->
+            <div id="logofooter">
+                <a href="https://www.gov.co/home/" target="_blank" title="Acceder a la página">
+                    <img alt="" height="48" src="https://www.supertransporte.gov.co/wp-content/uploads/2021/03/ZiqwTo.png" width="48">
+                        <img alt="" height="32" src="https://www.supertransporte.gov.co/wp-content/uploads/2019/08/bloque2385.png" width="129"/>
+                    </img>
+                </a>
+            </div>
+            <!-- FIN PIE 3 -->
+        </div>
+        <!-- FIN ZONA PIE DE PÁGINA COMPLETA-->
+        <!-- Link Js Bootsrap -->
+        <script crossorigin="anonymous" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" src="https://code.jquery.com/jquery-3.2.1.slim.min.js">
+        </script>
+        <script crossorigin="anonymous" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js">
+        </script>
+        <script crossorigin="anonymous" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js">
+        </script>
+    </body>
+</html>
