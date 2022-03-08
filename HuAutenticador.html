@@ -35,17 +35,17 @@
                     <div class="col-12">
                         <form style="margin: 25px;">
                             <div class="form-group body-1">
-                                <label class="gris-txt-4B4B4B" for="exampleInputEmail1">
+                                <label class="gris-txt-4B4B4B">
                                     Usuario
                                 </label>
-                                <input aria-describedby="emailHelp" class="campo-form campo-texto" id="exampleInputEmail1" placeholder="Ingresar email" type="email"/>
+                                <input aria-describedby="emailHelp" class="campo-form campo-texto" placeholder="Ingresar email" required="" type="email"/>
                             </div>
                             <br/>
                             <div class="form-group body-1" id="pass-group">
-                                <label class="gris-txt-4B4B4B" for="exampleInputPassword1">
+                                <label class="gris-txt-4B4B4B">
                                     Contraseña
                                 </label>
-                                <input class="campo-form campo-texto password1" id="input-pass" name="password" placeholder="Ingresar Contraseña" type="password"/>
+                                <input class="campo-form campo-texto password1" name="password" placeholder="Ingresar Contraseña" required="" type="password"/>
                                 <span class="fa fa-fw fa-eye fa-lg azul-txt-3366CC password-icon show-password" onclick="verPass();">
                                 </span>
                             </div>
@@ -54,7 +54,7 @@
                                 Zona de ReCapchat según Mockups
                             </div>
                             <br/>
-                            <button class="boton-activo-bg mb-3" type="submit">
+                            <button class="boton-activo-bg mb-3" id="btn-enviar" type="submit">
                                 INGRESAR
                             </button>
                             <br/>

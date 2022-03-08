@@ -376,6 +376,7 @@ option {
 .boton-activo-bg:hover {
     color: var(--color-blanco-FFFFFF);
     background-color: var(--color-azul-004884);
+    cursor: pointer;
 }
 /*2. Estilos de boton Activado sin etiqueta de fondo*/
 
@@ -390,6 +391,7 @@ option {
 .boton-activo:hover {
     color: var(--color-blanco-FFFFFF);
     background-color: var(--color-azul-004884);
+    cursor: pointer;
 }
 /*3. Estilos de boton Activado tipo enlace*/
 
@@ -400,6 +402,7 @@ option {
 }
 .boton-enlace-activo:hover {
     color: var(--color-azul-004884);
+    cursor: pointer;
 }
 /*Botones en estado Desactivado*/
 
@@ -439,6 +442,7 @@ option {
     color: #3366CC;
     background-color: #f2f2f2;
     padding: var(--padding-boton);
+    cursor: pointer;
 }
 /*.boton-menu:hover {
     background-color: #b2b2b2;
@@ -488,13 +492,14 @@ option {
 }
 .migajas-item a:hover {
     text-decoration: underline;
+    font-size: var(--font-size-15);
 }
 .migajas-item+.migajas-item::before {
     display: inline-block;
     padding-right: 0.5rem;
     padding-left: 0.5rem;
     color: #BABABA;
-    content: ">";
+    content: url("../iconos/next-gray.png");
 }
 .migajas-item.active {
     font-family: "Work Sans Medium";
