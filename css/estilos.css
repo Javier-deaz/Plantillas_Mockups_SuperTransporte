@@ -303,10 +303,16 @@
     border: 1px solid #069169;
     background-color: #FFF;
 }
+.campo-valido::placeholder {
+    color: #069169;
+}
 .campo-invalido {
     color: #A80521;
     border: 1px solid #A80521;
     background-color: #FFF;
+}
+.campo-invalido::placeholder {
+    color: #A80521;
 }
 .message-valido {
     display: block;
