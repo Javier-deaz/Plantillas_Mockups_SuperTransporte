@@ -12,9 +12,6 @@
         <link href="css/dist/css/bootstrap.min.css" rel="stylesheet"/>
         <!-- Link Font Awsome Icons -->
         <link href="css/fontawesome-free-6.0.0-web/css/all.css" rel="stylesheet"/>
-        <!-- Link Js -->
-        <script src="js/funciones.js">
-        </script>
     </head>
     <body>
         <!-- ZONA CABECERA GOV.CO-->
@@ -55,6 +52,7 @@
         </nav>
         <!-- FIN ZONA MENÚ -->
         <!-- ZONA CONTENIDO -->
+        <!-- Primer bloque -->
         <div class="container">
             <div class="col-12 col-md-7 m-0 p-0" id="inicio">
                 <h2 class="headline-xl azul-txt-004884 mt-5">
@@ -80,6 +78,8 @@
                 </p>
             </div>
         </div>
+        <!-- Fin Primer bloque -->
+        <!-- Segundo bloque -->
         <div class="container-fluid gris-bg-F2F2F2 pt-5 mt-5 pb-3">
             <div class="container">
                 <h3 class="headline-l azul-txt-004884">
@@ -89,17 +89,17 @@
                     <div class="col-12 m-0 p-0">
                         <form style="margin: 25px;">
                             <div class="form-group body-1">
-                                <label class="gris-txt-4B4B4B" for="exampleInputEmail1">
+                                <label class="gris-txt-4B4B4B">
                                     Usuario
                                 </label>
-                                <input aria-describedby="emailHelp" class="campo-form campo-texto" id="exampleInputEmail1" placeholder="Ingresar email" type="email"/>
+                                <input aria-describedby="emailHelp" class="campo-form campo-texto input-texto" id="exampleInputEmail1" placeholder="Ingresar email" required="" type="email"/>
                             </div>
                             <br/>
                             <div class="form-group body-1" id="pass-group">
-                                <label class="gris-txt-4B4B4B" for="exampleInputPassword1">
+                                <label class="gris-txt-4B4B4B">
                                     Contraseña
                                 </label>
-                                <input class="campo-form campo-texto password1" id="input-pass" name="password" placeholder="Ingresar Contraseña" type="password"/>
+                                <input class="campo-form campo-texto password1 input-texto" id="input-pass" name="password" placeholder="Ingresar Contraseña" required="" type="password"/>
                                 <span class="fa fa-fw fa-eye fa-lg azul-txt-3366CC password-icon show-password" onclick="verPass();">
                                 </span>
                             </div>
@@ -108,7 +108,7 @@
                                 Zona de ReCapchat según Mockups
                             </div>
                             <br/>
-                            <button class="boton-activo-bg mb-3" type="submit">
+                            <button class="boton-desactivado-bg mb-3" id="btn-ingresar" type="submit">
                                 INGRESAR
                             </button>
                             <br/>
@@ -120,7 +120,9 @@
                 </div>
             </div>
         </div>
-        <div class="container mt-5 pb-5">
+        <!-- Fin Segundo bloque -->
+        <!-- Tercer bloque -->
+        <div class="container mt-5">
             <h3 class="headline-l azul-txt-004884 mb-4">
                 Formulario Registro
             </h3>
@@ -147,7 +149,7 @@
                             <label class="gris-txt-4B4B4B">
                                 Número de documento*
                             </label>
-                            <input class="campo-form campo-texto" placeholder="Escribir documento" type="text"/>
+                            <input class="campo-form campo-texto" placeholder="Escribir documento" required="" type="text"/>
                         </div>
                     </div>
                     <div class="form-row">
@@ -155,7 +157,7 @@
                             <label class="gris-txt-4B4B4B">
                                 Primer nombre*
                             </label>
-                            <input class="campo-form campo-texto" placeholder="Escribir nombre" type="text"/>
+                            <input class="campo-form campo-texto" placeholder="Escribir nombre" required="" type="text"/>
                         </div>
                         <div class="form-group body-1 ml-lg-4 col-md-4 ml-md-0">
                             <label class="gris-txt-4B4B4B">
@@ -169,7 +171,7 @@
                             <label class="gris-txt-4B4B4B">
                                 Primer apellido*
                             </label>
-                            <input class="campo-form campo-texto" placeholder="Escribir apellido" type="text"/>
+                            <input class="campo-form campo-texto" placeholder="Escribir apellido" required="" type="text"/>
                         </div>
                         <div class="form-group body-1 ml-lg-4 col-md-4 ml-md-0">
                             <label class="gris-txt-4B4B4B">
@@ -183,7 +185,7 @@
                             <label class="gris-txt-4B4B4B">
                                 Correo electrónico*
                             </label>
-                            <input aria-describedby="emailHelp" class="campo-form campo-texto" placeholder="Escribir correo" type="email"/>
+                            <input aria-describedby="emailHelp" class="campo-form campo-texto" placeholder="Escribir correo" required="" type="email"/>
                         </div>
                         <div class="form-group body-1 ml-lg-4 col-md-4 ml-md-0">
                             <label class="gris-txt-4B4B4B">
@@ -225,6 +227,54 @@
                 </form>
             </div>
         </div>
+        <!-- Fin Tercer bloque -->
+        <!-- Cuarto bloque -->
+        <div class="container-fluid gris-bg-F2F2F2 pt-5 mt-5 pb-3">
+            <div class="container">
+                <h3 class="headline-l azul-txt-004884 mb-4">
+                    Tipos de campos de texto
+                </h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4 class="headline-m azul-txt-004884">
+                            Sencillo con placeholder
+                        </h4>
+                        <div class="form-group body-1 mt-3">
+                            <label class="gris-txt-4B4B4B">
+                                Correo electrónico*
+                            </label>
+                            <input aria-describedby="emailHelp" class="campo-form campo-texto" placeholder="Escribir correo" required="" type="email"/>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h4 class="headline-m azul-txt-004884">
+                            Sencillo sin placeholder
+                        </h4>
+                        <div class="form-group body-1 mt-3">
+                            <label class="gris-txt-4B4B4B">
+                                Nombre*
+                            </label>
+                            <input aria-describedby="emailHelp" class="campo-form campo-texto" required="" type="text"/>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h4 class="headline-m azul-txt-004884">
+                            Con nota
+                        </h4>
+                        <div class="form-group body-1 mt-3">
+                            <label class="gris-txt-4B4B4B">
+                                Campo de texto*
+                            </label>
+                            <input aria-describedby="emailHelp" class="campo-form campo-texto" required="" type="text"/>
+                            <span class="message message-normal">
+                                Nota explicativa del funcionamiento
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fin Cuarto bloque -->
         <!-- FIN ZONA CONTENIDO -->
         <!-- ZONA PIE DE PÁGINA COMPLETA -->
         <div>
@@ -385,6 +435,12 @@
         <script crossorigin="anonymous" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js">
         </script>
         <script crossorigin="anonymous" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js">
+        </script>
+        <!-- Link Js -->
+        <script src="js/funciones.js">
+        </script>
+        <!-- Linj Jquery -->
+        <script src="https://code.jquery.com/jquery-3.1.0.js">
         </script>
     </body>
 </html>

@@ -314,18 +314,19 @@
 .campo-invalido::placeholder {
     color: #A80521;
 }
-.message-valido {
+.message {
     display: block;
     width: 100%;
     margin-top: 0.35rem;
     font-size: 80%;
+}
+.message-normal {
+    color: #4B4B4B;
+}
+.message-valido {
     color: #069169;
 }
 .message-invalido {
-    display: block;
-    width: 100%;
-    margin-top: 0.35rem;
-    font-size: 80%;
     color: #A80521;
 }
 /*Estilo para campos de TextArea Activo*/
